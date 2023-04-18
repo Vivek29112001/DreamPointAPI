@@ -17,9 +17,15 @@ router.post('/forgot-password', forgotPasswordController);
 // test routes
 router.get('/test', requireSignIn, isAdmin, testController);
 
-// protected routh auth
+// protected user routh auth
 router.get('/user-auth', requireSignIn, (req,res) =>{
     res.status(200).send({ok:true});
 });
+
+// protected Admin routh auth
+router.get('/admin-auth', requireSignIn,isAdmin, (req,res) =>{
+    res.status(200).send({ok:true});
+});
+
 
 export default router;
