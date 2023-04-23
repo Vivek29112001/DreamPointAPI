@@ -15,7 +15,7 @@ dotenv.config();
 connectDB();
 
 // esmodeule flx
-const _filename = fileURLToPath(import.meta.url);
+const __filename = fileURLToPath(import.meta.url);
 
 //rest object
 const app = express();
