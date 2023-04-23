@@ -52,6 +52,8 @@
 ==========footer============= */
 
 .footer {
+  margin-bottom: auto;
+  overflow-y: hidden;
   color: white;
   padding: 25px;
   background: #000000; /* fallback for old browsers */
@@ -66,7 +68,7 @@
 .footer a {
   text-decoration: none;
   color: white;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .footer a:hover {

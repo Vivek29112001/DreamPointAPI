@@ -88,6 +88,22 @@ const CreateProduct = () => {
                   </Option>
                 ))}
               </Select>
+              <Select
+                bordered={false}
+                placeholder="Select sub a category"
+                size="medium"
+                showSearch
+                className="form-select mb-3"
+                onChange={(value) => {
+                  setCategory(value);
+                }}
+              >
+                {categories?.map((c) => (
+                  <Option key={c._id} value={c._id}>
+                    {c.name}
+                  </Option>
+                ))}
+              </Select>
               <div className="mb-3">
                 <label className="btn btn-outline-secondary col-md-12">
                   {photo ? photo.name : "Upload Photo"}

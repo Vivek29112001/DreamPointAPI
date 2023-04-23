@@ -7,7 +7,7 @@ const Contact = () => {
       <div className="row contactus ">
         <div className="col-md-6 ">
           <img
-            src="/images/contactus.jpg"
+            src="/images/contactus.jpeg"
             alt="contactus"
             style={{ width: "100%" }}
           />
@@ -19,7 +19,7 @@ const Contact = () => {
             vaialible
           </p>
           <p className="mt-3">
-            <BiMailSend /> : www.help@foodpanda.com
+            <BiMailSend /> : www.help@dreampoint.com
           </p>
           <p className="mt-3">
             <BiPhoneCall /> : 012-3456789
